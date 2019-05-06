@@ -98,27 +98,13 @@ alias -g gcam="git commit -am "
 alias -g subl="subl ."
 alias -g vim="nvim"
 alias -g vi="nvim"
-alias -g am="adminMongo"
-alias -g cdlog="flynn -a coindealerio-coindealer-websit log -f"
-alias -g cslog="flynn -a coindealer-staging log -f"
-alias -g wclog='flynn -a wallet-cron log -f'
 alias -g cde="code ."
 alias -g zsrc="source ~/.zshrc"
 alias -g vizsh="vi ~/.zshrc"
-alias -g sshflynn1="ssh root@138.68.247.7"
-alias -g sshflynn2="ssh root@159.89.148.18"
-alias -g sshflynn3="ssh root@159.89.148.28"
-alias -g f80=$'awk \'/web/ {print substr($0, 88)}\''
-alias -g fwc=$'awk \'/worker/ {print substr($0, 91)}\''
-alias -g ferc=$'awk \'/erc20queue/ {print substr($0, 95)}\''
 
-export PATH="$HOME/.fastlane/bin:$PATH"
+# setup vi keybindings/prompt
+bindkey -v
+export KEYTIMEOUT=1
 
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/matthewschupack/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/matthewschupack/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/matthewschupack/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/matthewschupack/google-cloud-sdk/completion.zsh.inc'; fi
 autoload -U promptinit; promptinit
 prompt pure
