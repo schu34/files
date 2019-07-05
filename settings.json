@@ -1,0 +1,103 @@
+{
+    "window.zoomLevel": 0,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+    "breadcrumbs.enabled": true,
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "editor.tabSize": 2,
+    "workbench.colorTheme": "Over Night Owl",
+    "vim.foldfix": true,
+    "emmet.triggerExpansionOnTab": false,
+    "emmet.showSuggestionsAsSnippets": false,
+    "editor.minimap.enabled": false,
+    "indentRainbow.colors": [
+        "rgba(64,64,16,0.99)",
+        "rgba(32,64,32,0.99)",
+        "rgba(64,32,64,0.99)",
+        "rgba(16,48,48,0.99)"
+    ],
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "bracketPairColorizer.showBracketsInGutter": true,
+    "terminal.integrated.fontSize": 16,
+    "keyboard.touchbar.enabled": false,
+    "eslint.alwaysShowStatus": true,
+    "explorer.sortOrder": "type",
+    "editor.cursorBlinking": "smooth",
+    "scss.lint.zeroUnits": "warning",
+    "editor.fontSize": 17,
+    "files.exclude": {
+        "**/.idea": true,
+        "**/.jest-cache": true
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "cSpell.userWords": [
+        "Maxymiser",
+        "Metas",
+        "Upsell",
+        "epaas",
+        "gcxo"
+    ],
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "vim.leader": "<space>",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>", "p"],
+            "commands": ["editor.action.formatDocument","eslint.executeAutofix"],
+        },
+        {
+            "before": ["<leader>", "f"],
+            "commands": ["eslint.executeAutofix"],
+        },
+        {
+            "before":["j"],
+            "after":["j","z","z"],
+        },
+        {
+            "before":["k"],
+            "after":["k","z","z"],
+        },
+        {
+            "before":["{"],
+            "after":["{","z","z"],
+        },
+        {
+            "before":["}"],
+            "after":["}","z","z"],
+        },
+        {
+            "before":["<leader>", "b"],
+            "commands":["workbench.action.files.save",{"command":"runInTerminal.run", "args":{"name":"b"}}] 
+        },
+        {
+            "before":["<leader>", "<leader>"],
+            "commands":["workbench.action.files.save",{"command":"runInTerminal.run", "args":{"name":"b"}}] 
+        },
+        {
+            "before":["<leader>", "t"],
+            "commands":[{"command":"runInTerminal.run", "args":{"name":"t"}}] 
+        },
+        {
+            "before":["<leader>", "i"],
+            "commands":[{"command":"runInTerminal.run", "args":{"name":"i"}}] 
+        }
+        
+    ],
+    "workbench.editor.highlightModifiedTabs": true,
+    "emmet.showExpandedAbbreviation": "never",
+    "runInTerminal.commands":[
+        {"match":".*", "name": "b", "cmd":"npm run build" },
+        {"match":".*", "name": "t", "cmd":"npm run test" }
+        {"match":".*", "name": "i", "cmd":"npm install" }
+    ]
+
+}
